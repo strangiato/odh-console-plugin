@@ -34,6 +34,20 @@
       }
     }
   },
+  {
+    "type": "console.yaml-template",
+    "properties": {
+      "name": "default",
+      "model": {
+        "group": "kubeflow.org",
+        "kind": "Notebook",
+        "version": "v1"
+      },
+      "template": {
+        "$codeRef": "YamlNotebooksTemplates.defaultNotebookYamlTemplate"
+      }
+    }
+  },
 
   {
     "type": "console.flag/model",
@@ -88,22 +102,22 @@
   },
 
 
-  {
-    "type": "console.page/route",
-    "properties": {
-      "exact": true,
-      "path": "/example",
-      "component": { "$codeRef": "ExamplePage" }
-    }
-  },
-  {
-    "type": "console.navigation/href",
-    "properties": {
-      "id": "example",
-      "name": "%plugin__console-plugin-template~Plugin Example%",
-      "href": "/example",
-      "perspective": "admin",
-      "section": "home"
+    {
+      "type": "console.page/route",
+      "properties": {
+        "exact": true,
+        "path": "/example",
+        "component": { "$codeRef": "ExamplePage" }
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "example",
+        "name": "%plugin__console-plugin-template~Plugin Example%",
+        "href": "/example",
+        "perspective": "admin",
+        "section": "home"
     }
   }
 ]

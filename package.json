@@ -68,7 +68,8 @@
     "displayName": "ODH OpenShift Console Plugin",
     "description": "Open Data Hub console plugin for OpenShift.",
     "exposedModules": {
-      "ExamplePage": "./components/ExamplePage"
+      "ExamplePage": "./components/ExamplePage",
+      "YamlNotebooksTemplates": "./notebooks/templates/index.ts"
     },
     "dependencies": {
       "@console/pluginAPI": "*"
