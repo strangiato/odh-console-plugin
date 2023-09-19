@@ -1,5 +1,94 @@
 [
   {
+    "type": "console.flag/model",
+    "properties": {
+      "flag": "NOTEBOOK",
+      "model": {
+        "group": "kubeflow.org",
+        "kind": "Notebook",
+        "version": "v1"
+      }
+    }
+  },
+
+  {
+    "type": "console.navigation/section",
+    "properties": {
+      "id": "datascience",
+      "insertAfter": "workloads",
+      "perspective": "admin",
+      "name": "%plugin__odh-console-plugin~Data Science%"
+    }
+  },
+  {
+    "type": "console.navigation/resource-ns",
+    "properties": {
+      "id": "notebooks",
+      "name": "%plugin__odh-console-plugin~Notebooks%",
+      "perspective": "admin",
+      "section": "datascience",
+      "model": {
+        "group": "kubeflow.org",
+        "kind": "Notebook",
+        "version": "v1"
+      }
+    }
+  },
+
+  {
+    "type": "console.flag/model",
+    "properties": {
+      "flag": "DATASCIENCEPIPELINEAPPLICATION",
+      "model": {
+        "group": "datasciencepipelinesapplications.opendatahub.io",
+        "kind": "DataSciencePipelinesApplication",
+        "version": "v1alpha1"
+      }
+    }
+  },
+  {
+    "type": "console.navigation/resource-ns",
+    "properties": {
+      "id": "datasciencepipelineapplication",
+      "name": "%plugin__odh-console-plugin~Pipeline Instances%",
+      "perspective": "admin",
+      "section": "datascience",
+      "model": {
+        "group": "datasciencepipelinesapplications.opendatahub.io",
+        "kind": "DataSciencePipelinesApplication",
+        "version": "v1alpha1"
+      }
+    }
+  },
+
+  {
+    "type": "console.flag/model",
+    "properties": {
+      "flag": "INFERENCESERVICE",
+      "model": {
+        "group": "serving.kserve.io",
+        "kind": "InferenceService",
+        "version": "v1beta1"
+      }
+    }
+  },
+  {
+    "type": "console.navigation/resource-ns",
+    "properties": {
+      "id": "inferenceservice",
+      "name": "%plugin__odh-console-plugin~Inference Services%",
+      "perspective": "admin",
+      "section": "datascience",
+      "model": {
+        "group": "serving.kserve.io",
+        "kind": "InferenceService",
+        "version": "v1beta1"
+      }
+    }
+  },
+
+
+  {
     "type": "console.page/route",
     "properties": {
       "exact": true,
