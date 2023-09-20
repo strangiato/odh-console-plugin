@@ -32,6 +32,9 @@
         "kind": "Notebook",
         "version": "v1"
       }
+    },
+    "flags": {
+      "required": ["NOTEBOOK"]
     }
   },
   {
@@ -46,13 +49,16 @@
       "template": {
         "$codeRef": "YamlNotebooksTemplates.defaultNotebookYamlTemplate"
       }
+    },
+    "flags": {
+      "required": ["NOTEBOOK"]
     }
   },
 
   {
     "type": "console.flag/model",
     "properties": {
-      "flag": "DATASCIENCEPIPELINEAPPLICATION",
+      "flag": "DSPA",
       "model": {
         "group": "datasciencepipelinesapplications.opendatahub.io",
         "kind": "DataSciencePipelinesApplication",
@@ -72,6 +78,9 @@
         "kind": "DataSciencePipelinesApplication",
         "version": "v1alpha1"
       }
+    },
+    "flags": {
+      "required": ["DSPA"]
     }
   },
 
@@ -98,26 +107,9 @@
         "kind": "InferenceService",
         "version": "v1beta1"
       }
-    }
-  },
-
-
-    {
-      "type": "console.page/route",
-      "properties": {
-        "exact": true,
-        "path": "/example",
-        "component": { "$codeRef": "ExamplePage" }
-      }
     },
-    {
-      "type": "console.navigation/href",
-      "properties": {
-        "id": "example",
-        "name": "%plugin__console-plugin-template~Plugin Example%",
-        "href": "/example",
-        "perspective": "admin",
-        "section": "home"
+    "flags": {
+      "required": ["INFERENCESERVICE"]
     }
   }
 ]
