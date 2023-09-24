@@ -67,7 +67,7 @@
     "description": "An OpenShift plugin for Open Data Hub.",
     "exposedModules": {
       "NotebookList": "./kinds/notebooks/components/NotebookList/NotebookList.tsx",
-      "yamlTemplates": "src/templates/index.ts"
+      "yamlTemplates": "./kinds/notebooks/components/templates/index.ts"
     },
     "dependencies": {
       "@console/pluginAPI": "^4.11"
