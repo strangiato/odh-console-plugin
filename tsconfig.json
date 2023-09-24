@@ -15,9 +15,7 @@
     "noUnusedLocals": true,
     "paths": {
       "@odh-utils": ["src/utils"],
-      "@odh-utils/*": ["src/utils/*"],
-      "@notebooks-model": ["src/kinds/notebooks/types"],
-      "@notebooks-model/*": ["src/kinds/notebooks/types/*"]
+      "@odh-utils/*": ["src/utils/*"]
     }
   },
   "include": ["src"],

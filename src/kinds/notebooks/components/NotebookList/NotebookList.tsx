@@ -1,5 +1,5 @@
 import React from 'react';
-import { NotebookKind,  } from '@notebooks-model/types';
+import { NotebookKind,  } from '../../types';
 import {
   K8sResourceCommon,
   ListPageBody,
