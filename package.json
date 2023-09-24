@@ -2,7 +2,7 @@
   "name": "odh-plugin",
   "version": "0.0.1",
   "private": true,
-  "repository": "git@github.com:strangiato/odh-console-plugin.git",
+  "repository": "git@github.com:openshift/crontab-plugin.git",
   "license": "Apache-2.0",
   "scripts": {
     "check-types": "tsc",
@@ -66,7 +66,7 @@
     "displayName": "Open Data Hub Plugin",
     "description": "An OpenShift plugin for Open Data Hub.",
     "exposedModules": {
-      "NotebookList": "./views/NotebookList/NotebookList.tsx",
+      "NotebookList": "./kinds/notebooks/components/NotebookList/NotebookList.tsx",
       "yamlTemplates": "src/templates/index.ts"
     },
     "dependencies": {
