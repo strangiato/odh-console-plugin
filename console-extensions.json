@@ -1,5 +1,14 @@
 [
   {
+    "type": "console.navigation/section",
+    "properties": {
+      "id": "datascience",
+      "insertAfter": "workloads",
+      "perspective": "admin",
+      "name": "%plugin__odh-console-plugin~Data Science%"
+    }
+  },
+  {
     "type": "console.flag/model",
     "properties": {
       "flag": "NOTEBOOK",
@@ -8,16 +17,6 @@
         "kind": "Notebook",
         "version": "v1"
       }
-    }
-  },
-
-  {
-    "type": "console.navigation/section",
-    "properties": {
-      "id": "datascience",
-      "insertAfter": "workloads",
-      "perspective": "admin",
-      "name": "%plugin__odh-console-plugin~Data Science%"
     }
   },
   {
@@ -31,12 +30,13 @@
         "group": "kubeflow.org",
         "kind": "Notebook",
         "version": "v1"
+      },
+      "flags": {
+        "required": ["NOTEBOOK"]
       }
-    },
-    "flags": {
-      "required": ["NOTEBOOK"]
     }
   },
+
   {
     "type": "console.yaml-template",
     "properties": {
@@ -47,7 +47,7 @@
         "version": "v1"
       },
       "template": {
-        "$codeRef": "YamlNotebooksTemplates.defaultNotebookYamlTemplate"
+        "$codeRef": "yamlTemplates.defaultNotebookYamlTemplate"
       }
     },
     "flags": {
@@ -56,60 +56,19 @@
   },
 
   {
-    "type": "console.flag/model",
+    "type": "console.page/resource/list",
     "properties": {
-      "flag": "DSPA",
       "model": {
-        "group": "datasciencepipelinesapplications.opendatahub.io",
-        "kind": "DataSciencePipelinesApplication",
-        "version": "v1alpha1"
-      }
-    }
-  },
-  {
-    "type": "console.navigation/resource-ns",
-    "properties": {
-      "id": "datasciencepipelineapplication",
-      "name": "%plugin__odh-console-plugin~Pipeline Instances%",
-      "perspective": "admin",
-      "section": "datascience",
-      "model": {
-        "group": "datasciencepipelinesapplications.opendatahub.io",
-        "kind": "DataSciencePipelinesApplication",
-        "version": "v1alpha1"
+        "group": "kubeflow.org",
+        "kind": "Notebook",
+        "version": "v1"
+      },
+      "component": {
+        "$codeRef": "NotebookList"
       }
     },
     "flags": {
-      "required": ["DSPA"]
-    }
-  },
-
-  {
-    "type": "console.flag/model",
-    "properties": {
-      "flag": "INFERENCESERVICE",
-      "model": {
-        "group": "serving.kserve.io",
-        "kind": "InferenceService",
-        "version": "v1beta1"
-      }
-    }
-  },
-  {
-    "type": "console.navigation/resource-ns",
-    "properties": {
-      "id": "inferenceservice",
-      "name": "%plugin__odh-console-plugin~Inference Services%",
-      "perspective": "admin",
-      "section": "datascience",
-      "model": {
-        "group": "serving.kserve.io",
-        "kind": "InferenceService",
-        "version": "v1beta1"
-      }
-    },
-    "flags": {
-      "required": ["INFERENCESERVICE"]
+      "required": ["NOTEBOOK"]
     }
   }
 ]
