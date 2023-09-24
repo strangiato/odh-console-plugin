@@ -16,8 +16,8 @@
     "paths": {
       "@odh-utils": ["src/utils"],
       "@odh-utils/*": ["src/utils/*"],
-      "@odh-model": ["src/types"],
-      "@odh-model/*": ["src/types/*"]
+      "@notebooks-model": ["src/kinds/notebooks/types"],
+      "@notebooks-model/*": ["src/kinds/notebooks/types/*"]
     }
   },
   "include": ["src"],
