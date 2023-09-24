@@ -1,5 +1,5 @@
 {
-  "name": "odh-plugin",
+  "name": "odh-console-plugin",
   "version": "0.0.1",
   "private": true,
   "repository": "git@github.com:openshift/crontab-plugin.git",
@@ -61,7 +61,7 @@
     "webpack-dev-server": "^4.5.0"
   },
   "consolePlugin": {
-    "name": "odh-plugin",
+    "name": "odh-console-plugin",
     "version": "0.0.1",
     "displayName": "Open Data Hub Plugin",
     "description": "An OpenShift plugin for Open Data Hub.",
