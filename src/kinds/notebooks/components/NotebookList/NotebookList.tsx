@@ -1,21 +1,24 @@
 import React from 'react';
-import { NotebookKind,  } from '../../types';
 import {
   K8sResourceCommon,
   ListPageBody,
   ListPageCreate,
   ListPageFilter,
   ListPageHeader,
+  ResourceLink, 
+  RowProps,
+  TableColumn,
+  TableData,
   Timestamp,
   useK8sWatchResource,
   useListPageFilter,
   VirtualizedTable,
 } from '@openshift-console/dynamic-plugin-sdk';
+import { sortable } from '@patternfly/react-table';
 import { useODHTranslation } from '@odh-utils/hooks/useODHTranslation';
 import { notebookGroupVersionKind, namespaceGroupVersionKind } from '@odh-utils/utils';
-import { ResourceLink, RowProps, TableData } from '@openshift-console/dynamic-plugin-sdk';
-import { TableColumn } from '@openshift-console/dynamic-plugin-sdk';
-import { sortable } from '@patternfly/react-table';
+import { NotebookKind,  } from '../../types';
+
 
 type NotebookListProps = {
   namespace: string;
