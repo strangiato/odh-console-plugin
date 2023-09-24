@@ -34,10 +34,10 @@ const NotebookList: React.FC<NotebookListProps> = ({ namespace }) => {
 
   return (
     <>
-      <ListPageHeader title={t('Notebooks')}>
+      <ListPageHeader title={t('Workbenches')}>
         {/* groupVersionKind should take an object but there is discrepancy in the prop types
         https://issues.redhat.com/browse/OCPBUGS-13808 will update the types */}
-        <ListPageCreate groupVersionKind={"kubeflow.org~v1~Notebook"}>Create Notebook</ListPageCreate>
+        <ListPageCreate groupVersionKind={"kubeflow.org~v1~Notebook"}>Create Workbench</ListPageCreate>
       </ListPageHeader>
       <ListPageBody>
         <ListPageFilter data={data} loaded={loaded} onFilterChange={onFilterChange} />

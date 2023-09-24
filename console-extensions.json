@@ -23,7 +23,7 @@
     "type": "console.navigation/resource-ns",
     "properties": {
       "id": "notebooks",
-      "name": "%plugin__odh-console-plugin~Notebooks%",
+      "name": "%plugin__odh-console-plugin~Workbenches%",
       "perspective": "admin",
       "section": "datascience",
       "model": {
