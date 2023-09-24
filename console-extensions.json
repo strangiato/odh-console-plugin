@@ -70,5 +70,63 @@
     "flags": {
       "required": ["NOTEBOOK"]
     }
+  },
+
+  {
+    "type": "console.flag/model",
+    "properties": {
+      "flag": "DSPA",
+      "model": {
+        "group": "datasciencepipelinesapplications.opendatahub.io",
+        "kind": "DataSciencePipelinesApplication",
+        "version": "v1alpha1"
+      }
+    }
+  },
+  {
+    "type": "console.navigation/resource-ns",
+    "properties": {
+      "id": "datasciencepipelineapplication",
+      "name": "%plugin__odh-console-plugin~Pipeline Instances%",
+      "perspective": "admin",
+      "section": "datascience",
+      "model": {
+        "group": "datasciencepipelinesapplications.opendatahub.io",
+        "kind": "DataSciencePipelinesApplication",
+        "version": "v1alpha1"
+      }
+    },
+    "flags": {
+      "required": ["DSPA"]
+    }
+  },
+
+  {
+    "type": "console.flag/model",
+    "properties": {
+      "flag": "INFERENCESERVICE",
+      "model": {
+        "group": "serving.kserve.io",
+        "kind": "InferenceService",
+        "version": "v1beta1"
+      }
+    }
+  },
+  {
+    "type": "console.navigation/resource-ns",
+    "properties": {
+      "id": "inferenceservice",
+      "name": "%plugin__odh-console-plugin~Inference Services%",
+      "perspective": "admin",
+      "section": "datascience",
+      "model": {
+        "group": "serving.kserve.io",
+        "kind": "InferenceService",
+        "version": "v1beta1"
+      }
+    },
+    "flags": {
+      "required": ["INFERENCESERVICE"]
+    }
   }
 ]
